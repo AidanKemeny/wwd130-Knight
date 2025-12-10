@@ -1,0 +1,106 @@
+<!--
+Title: Reviews
+Authors: Spencer T. Crosland
+Purpose: Review page for Stronghold Strategy Guide Site
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="Styles/Style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Player Reviews</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="reviews.html" class="active">Reviews</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="reviews-page">
+
+        <!-- Review Form -->
+        <section class="review-form">
+            <h2>Leave a Review</h2>
+
+            <form id="reviewForm">
+                <label>Name:</label>
+                <input type="text" id="reviewerName" required>
+
+                <label>Rating:</label>
+                <select id="reviewRating" required>
+                    <option value="">Choose rating</option>
+                    <option value="5">★★★★★ — 5 Stars</option>
+                    <option value="4">★★★★☆ — 4 Stars</option>
+                    <option value="3">★★★☆☆ — 3 Stars</option>
+                    <option value="2">★★☆☆☆ — 2 Stars</option>
+                    <option value="1">★☆☆☆☆ — 1 Star</option>
+                </select>
+
+                <label>Your Review:</label>
+                <textarea id="reviewText" rows="4" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+
+        <!-- Display Reviews -->
+        <section>
+            <h2>What Players Are Saying</h2>
+            <div id="reviewsContainer" class="reviews-wrapper">
+                <!-- New reviews appear here -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const form = document.getElementById("reviewForm");
+        const reviewsContainer = document.getElementById("reviewsContainer");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("reviewerName").value;
+            const rating = document.getElementById("reviewRating").value;
+            const text = document.getElementById("reviewText").value;
+
+            // Create review card
+            const card = document.createElement("div");
+            card.classList.add("review-card");
+
+            let stars = "★★★★★".slice(0, rating) + "☆☆☆☆☆".slice(0, 5 - rating);
+
+            card.innerHTML = `
+                <h3>${stars}</h3>
+                <p>"${text}"</p>
+                <span class="reviewer-name">— ${name}</span>
+            `;
+
+            reviewsContainer.appendChild(card);
+
+            // Clear form
+            form.reset();
+        });
+    </script>
+
+</body>
+</html>
