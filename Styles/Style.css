@@ -1,95 +1,108 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #210F37;
+}
+
+
+/* MAIN CONTENT */
+h1 {
+    font-size: 3em;
+    color: #A55B4B ;
+    text-shadow: 2px 2px 5px #4F1C51;
+}
+
+h2 {
+    color: #A55B4B;
+    text-shadow: 2px 2px 5px #4F1C51;
+}
+
+h3 {
+    color: #DCA06D;
+    text-shadow: 2px 2px 5px #210F37;
+}
+
+p {
+    color: #DCA06D;
+    text-shadow: 2px 2px 5px #A55B4B;
+}
+
+
 /* ====== Review Page ========= */
-
-/* Review Page Grid */
-.reviews-page {
-    width: 90%;
-    max-width: 1100px;
-    margin: 40px auto;
-    color: white;
+.Long_Legs img{
+    height: 450px;
+    width: 300px;
+    border: 5px solid #DCA06D;
+    box-shadow: 0 0 20px #A55B4B ;
 }
 
-/* Review Form Box */
-.review-form {
-    background: #2A2A2D;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+.A_Quiet_Place img {
+    height: 450px;
+    width: 300px;
+    border: 5px solid #DCA06D;
+    box-shadow: 0 0 20px #A55B4B ;
 }
 
-.review-form h2 {
-    margin-bottom: 15px;
+.The_Village img{
+    height: 450px;
+    width: 300px;
+    border: 5px solid #DCA06D;
+    box-shadow: 0 0 20px #A55B4B ;
 }
 
-.review-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.A_Nightmare_on_Elm_Street img {
+    height: 450px;
+    width: 300px;
+    border: 5px solid #DCA06D;
+    box-shadow: 0 0 20px #A55B4B ;
 }
 
-.review-form input,
-.review-form textarea,
-.review-form select {
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
+.IT img {
+    height: 450px;
+    width: 300px;
+    border: 5px solid #DCA06D;
+    box-shadow: 0 0 20px #A55B4B ;
 }
 
-.review-form button {
-    padding: 10px;
-    background: gold;
-    color: black;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
+.The_Descent img {
+    height: 450px;
+    width: 300px;
+    border: 5px solid #DCA06D;
+    box-shadow: 0 0 20px #A55B4B ;
 }
 
-.review-form button:hover {
-    background: #e6c200;
+.Alian_Vs_Predator img {
+    height: 450px;
+    width: 300px;
+    border: 5px solid #DCA06D;
+    box-shadow: 0 0 20px #A55B4B ;
 }
 
-/* Review Cards */
-.reviews-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 20px;
+.Weapons img {
+    height: 450px;
+    width: 300px;
+    border: 5px solid #DCA06D;
+    box-shadow: 0 0 20px #A55B4B ;
 }
 
-.review-card {
-    background: #2A2A2D;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-.review-card h3 {
-    margin: 0 0 10px;
-    font-size: 1.3rem;
-    color: gold;
-}
-
-.review-card p {
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
-.reviewer-name {
-    opacity: 0.8;
-    font-size: 0.9rem;
+.The_Long_Walk img {
+    height: 450px;
+    width: 300px;
+    border: 5px solid #DCA06D;
+    box-shadow: 0 0 20px #A55B4B ;
 }
 
 /* ====== Footer ========= */
 footer {
-    background: #32CD32;
+    background: #A55B4B;
     margin: 20px auto;
     width: 90%;
     max-width: 900px;
     text-align: center;
     padding: 15px;
-    border: 5px solid #7F00FF;
+    border: 5px solid #DCA06D;
     border-radius: 20px;
-    box-shadow: 0 0 20px #ffffff;
-    color: #32CD32;
-    text-shadow: 1px 1px 3px #ffffff;
+    box-shadow: 0 0 20px #210F37 ;
+    color: #A55B4B;
+    text-shadow: 1px 1px 3px #4F1C51 ;
 }
