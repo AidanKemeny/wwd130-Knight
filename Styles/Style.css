@@ -2,11 +2,13 @@ body{
     padding: 0;
     margin: 0;
     background: #210F37;
+    align-content: center;
 }
 
 /* NAV */
 nav a {
     color: white;
+    padding: 20px;
 }
 
 
