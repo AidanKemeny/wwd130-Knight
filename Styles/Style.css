@@ -4,6 +4,11 @@ body{
     background: #210F37;
 }
 
+/* NAV */
+nav a {
+    color: white;
+}
+
 
 /* MAIN CONTENT */
 h1 {
@@ -105,6 +110,10 @@ footer {
     box-shadow: 0 0 20px #210F37 ;
     color: #A55B4B;
     text-shadow: 1px 1px 3px #4F1C51 ;
+}
+
+footer a {
+    color: white;
 }
 
 #gallery {
