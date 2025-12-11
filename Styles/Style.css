@@ -106,3 +106,14 @@ footer {
     color: #A55B4B;
     text-shadow: 1px 1px 3px #4F1C51 ;
 }
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+#gallery img {
+    height: 100px;
+    width: 75px;
+}
