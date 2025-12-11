@@ -117,4 +117,6 @@ footer {
 #gallery img {
     height: 200px;
     width: 175px;
+    display: block;
+    margin: 0 auto;
 }
