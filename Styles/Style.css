@@ -111,9 +111,10 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
+    align-items: center;
 }
 
 #gallery img {
-    height: 100px;
-    width: 75px;
+    height: 200px;
+    width: 175px;
 }
